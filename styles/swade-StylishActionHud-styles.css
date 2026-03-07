@@ -1,0 +1,10 @@
+/* Increases submenu window size for better visualization */
+/* Aumenta o tamanho da janela do submenu para melhor visualização */
+#stylish-action-hud-submenu-container {
+    width: 500px !important;
+    /* Default is 350px. !important to override themes. */
+    /* Padrão é 350px. !important para sobrepor temas. */
+    min-height: 350px !important;
+    /* Ensures minimum height for long lists */
+    /* Garante uma altura mínima para listas longas */
+}
