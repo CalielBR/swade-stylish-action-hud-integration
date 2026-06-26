@@ -1,18 +1,18 @@
 <div align="center">
 
-<h1>SWADE Stylish HUD & Better Rolls 2 Bridge</h1>
+<h1>SWADE Stylish HUD Bridge</h1>
 
-<p><strong>Ponte de integração de alta performance para SWADE, Better Rolls 2 e Stylish Action HUD</strong></p>
+<p><strong>Ponte de integração entre SWADE e Stylish Action HUD, usando apenas rolagens nativas do sistema</strong></p>
 
 <p>
-Totalmente otimizada para Foundry VTT V13, com HUD automatizado e interface limpa.
+Totalmente otimizada para Foundry VTT V14, com HUD automatizado e interface limpa.
 </p>
 
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Foundry%20VTT-v13-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/SWADE-v5.1.0%2B-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Foundry%20VTT-v14-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/SWADE-v6.0.3%2B-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Status-Stable-success?style=for-the-badge">
   <img src="https://img.shields.io/badge/Licença-MIT-green?style=for-the-badge">
 </p>
@@ -29,41 +29,41 @@ Totalmente otimizada para Foundry VTT V13, com HUD automatizado e interface limp
 
 ## ✨ Funcionalidades
 
-- 🔗 Integração perfeita entre SWADE, Stylish Action HUD e Better Rolls 2  
-- ⚡ HUD automático com todas as ações do personagem  
-- 🎲 Integração total com Better Rolls 2  
-- 🧼 Interface limpa e organizada  
-- 🚀 Plug and play (sem configuração)  
-- 🧩 Compatível com Foundry VTT V13  
+- 🔗 Integração perfeita entre SWADE e Stylish Action HUD
+- ⚡ HUD automático com todas as ações do personagem
+- 🎲 Rolagens 100% nativas do sistema SWADE (Activities), sem módulos extras de dados
+- 🧼 Interface limpa e organizada
+- 🚀 Plug and play (sem configuração)
+- 🧩 Compatível com Foundry VTT V14
 
 ---
 
 ## 📦 Requisitos
 
-- Sistema: SWADE (v5.1.0+)  
+- Sistema: SWADE (v6.0.3+)
 - Módulos:
-  - Stylish Action HUD  
-  - Better Rolls for SWADE 2  
+  - Stylish Action HUD
 
 ---
 
 ## 🚀 Instalação
 
-1. Abra o Foundry VTT  
-2. Vá em **Instalar Módulos**  
-3. Clique em **Instalar Módulo**  
+1. Abra o Foundry VTT
+2. Vá em **Instalar Módulos**
+3. Clique em **Instalar Módulo**
 4. Cole a URL:
-https://raw.githubusercontent.com/CalielBR/swade-StylishActionHud-integration/main/module.json
-
+   https://raw.githubusercontent.com/CalielBR/swade-StylishActionHud-integration/main/module.json
 
 ---
 
 ## 🧠 Como Funciona
 
 Este módulo conecta:
-- Sistema SWADE  
-- Stylish Action HUD  
-- Better Rolls 2  
+
+- Sistema SWADE
+- Stylish Action HUD
+
+Todas as rolagens (atributos, perícias, armas, poderes, consumíveis) usam diretamente a API nativa do SWADE (`actor.rollAttribute`, Activities de itens), sem depender de nenhum módulo de automação de dados.
 
 👉 Resultado: combate rápido, integrado e intuitivo.
 
