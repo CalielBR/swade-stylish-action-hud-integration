@@ -8,3 +8,95 @@
     /* Ensures minimum height for long lists */
     /* Garante uma altura mínima para listas longas */
 }
+
+/* =========================================
+   SWADE HUD TOOLTIP - Themed via JS-injected CSS vars 
+   Posicionado acima da hotbar nativa do Foundry
+   ========================================= */
+#swade-hud-tooltip {
+    position: fixed;
+    z-index: 55;
+    bottom: -1000px;
+    left: auto;
+    right: -1000px;
+    transform-origin: top right;
+    max-width: min(460px, calc(100vw - 40px));
+    width: auto;
+    max-height: min(320px, calc(100vh - 120px));
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: var(--tooltip-bg, rgba(15, 15, 20, 0.95));
+    border: 1px solid var(--tooltip-border, #444);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    padding: 14px 16px;
+    color: var(--tooltip-text, #ccc);
+    font-size: 0.88em;
+    line-height: 1.45;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease-out;
+    font-family: var(--swade-font, inherit);
+}
+
+#swade-hud-tooltip.active {
+    pointer-events: auto;
+    opacity: 1;
+    transition: opacity 0.12s ease-out;
+}
+
+.swade-tooltip-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid var(--g-accent, var(--tooltip-border, #4ecdc4));
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+}
+
+.swade-tooltip-header img {
+    flex-shrink: 0;
+    border: 1px solid var(--tooltip-border, #555);
+    border-radius: 3px;
+}
+
+.swade-tooltip-title {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--tooltip-header, #fff);
+    line-height: 1.2;
+}
+
+.swade-tooltip-type {
+    font-size: 0.75em;
+    color: var(--tooltip-text, #999);
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+
+.swade-tooltip-body {
+    font-size: 0.92em;
+}
+
+.swade-tooltip-body p {
+    margin-bottom: 0.4em;
+}
+
+.swade-tooltip-body strong {
+    color: var(--tooltip-header, #fff);
+}
+
+/* Scrollbar styling */
+#swade-hud-tooltip::-webkit-scrollbar {
+    width: 5px;
+}
+
+#swade-hud-tooltip::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#swade-hud-tooltip::-webkit-scrollbar-thumb {
+    background: var(--g-accent, var(--tooltip-border, #666));
+    border-radius: 3px;
+}
